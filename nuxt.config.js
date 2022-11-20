@@ -32,12 +32,24 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://tailwindcss.com/docs/guides/nuxtjs#2
+    '@nuxt/postcss8',
+    // https://composition-api.nuxtjs.org/getting-started/setup#quick-start
+    // '@nuxtjs/composition-api/module',
+    // '@pinia/nuxt',
   ],
+
+  // types: [
+  //   // ...
+  //   '@pinia/nuxt',
+  // ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://pinia.vuejs.org/ssr/nuxt.html#installation
+    // '@pinia/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -47,5 +59,12 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
 }
