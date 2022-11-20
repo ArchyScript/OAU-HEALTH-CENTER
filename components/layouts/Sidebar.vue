@@ -281,7 +281,7 @@
         </li>
 
         <li class="px-4 cursor-pointer hover:bg-gray-700">
-          <NuxtLink :to="{ name: 'card' }" class="py-2 flex items-center">
+          <NuxtLink to="card" class="py-2 flex items-center">
             <svg
               class="h-5 w-5 mr-2"
               viewBox="0 0 20 20"

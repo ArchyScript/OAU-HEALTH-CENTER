@@ -1,9 +1,9 @@
-import axios, { AxiosRequestHeaders } from 'axios'
-const API_BASE_URL = 'https://api.mealtrips.com/api/'
+import axios from 'axios'
+const API_BASE_URL = 'https://api.oauhealthcenter.com/api/'
 
-// verify auth tokenn before any request
+// verify auth token before any request
 
-export const getAuthHeaders = (): AxiosRequestHeaders & any => {
+export const getAuthHeaders = (): any => {
   let accessToken = localStorage.getItem('user_token')
 
   accessToken = !accessToken || accessToken === undefined ? '' : accessToken

@@ -1,3 +1,4 @@
 oau email for registration 
 check health history
-send halth tips 
+send health tips 
+push notification for any news

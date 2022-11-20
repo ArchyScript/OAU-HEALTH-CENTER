@@ -1,30 +1,35 @@
 <template>
-  <div class="flex min-h-screen green">
-    <the-sidebar />
+  <div class="p-6">
+    testing
+  </div>
+  <!-- <div class="flex min-h-screen green">
+    <SidebarVue />
 
     <div class="flex flex-col flex-grow bg-gray-200">
-      <the-header />
+      <HeaderVue />
 
       <div class="mb-auto">
         <router-view />
       </div>
 
-      <the-footer />
+      <FooterVue />
     </div>
-  </div>
+    </div>
+  </div> -->
 </template>
 
 <script lang="ts">
-import TheSidebar from '@/components/layouts/TheSidebar.vue'
-import TheHeader from '@/components/layouts/TheHeader.vue'
-import TheFooter from '@/components/layouts/TheFooter.vue'
+import SidebarVue from '~/components/layouts/Sidebar.vue'
+import HeaderVue from '~/components/layouts/Header.vue'
+import FooterVue from '~/components/layouts/Footer.vue'
 
 export default {
   name: 'IndexPage',
+  layout: 'default',
   components: {
-    TheSidebar,
-    TheHeader,
-    TheFooter,
+    SidebarVue,
+    HeaderVue,
+    FooterVue,
   },
 }
 </script>

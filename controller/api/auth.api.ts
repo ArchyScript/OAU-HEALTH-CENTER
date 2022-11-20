@@ -68,58 +68,6 @@ export const AuthApiService = {
   // },
 
   // //
-  // async accountProfile(payload: any) {
-  //   try {
-  //     const response = await default_axios_instance
-  //       .post(`account/profile`, payload)
-  //       .then(async (response) => response)
-
-  //     return HandleAxiosResponse(response)
-  //   } catch (error) {
-  //     return HandleAxiosError(error)
-  //   }
-  // },
-
-  // //
-  // async vendorAccountProfile(payload: any) {
-  //   try {
-  //     const response = await default_axios_instance
-  //       .post(`account/profile/vendor`, payload)
-  //       .then(async (response) => response)
-
-  //     return HandleAxiosResponse(response)
-  //   } catch (error) {
-  //     return HandleAxiosError(error)
-  //   }
-  // },
-
-  // //
-  // async customerAccountProfile(payload: any) {
-  //   try {
-  //     const response = await default_axios_instance
-  //       .post(`account/profile/customer`, payload)
-  //       .then(async (response) => response)
-
-  //     return HandleAxiosResponse(response)
-  //   } catch (error) {
-  //     return HandleAxiosError(error)
-  //   }
-  // },
-
-  // //
-  // async resetPassword(payload: any) {
-  //   try {
-  //     const response = await default_axios_instance
-  //       .post(`reset-password-mobile`, payload)
-  //       .then(async (response) => response)
-
-  //     return HandleAxiosResponse(response)
-  //   } catch (error) {
-  //     return HandleAxiosError(error)
-  //   }
-  // },
-
-  // //
   // async logout() {
   //   try {
   //     const response = await default_axios_instance

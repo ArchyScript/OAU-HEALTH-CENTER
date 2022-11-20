@@ -1,29 +1,29 @@
 <template>
   <div class="flex min-h-screen">
-    <the-sidebar />
+    <Sidebar />
 
     <div class="flex flex-col flex-grow bg-gray-200">
-      <the-header />
+      <Header />
 
       <div class="mb-auto">
         <router-view />
       </div>
 
-      <the-footer />
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-import TheSidebar from '@/components/layouts/TheSidebar.vue'
-import TheHeader from '@/components/layouts/TheHeader.vue'
-import TheFooter from '@/components/layouts/TheFooter.vue'
+import Sidebar from '~/components/layouts/Sidebar.vue'
+import Header from '~/components/layouts/Header.vue'
+import Footer from '~/components/layouts/Footer.vue'
 
 export default {
   components: {
-    TheSidebar,
-    TheHeader,
-    TheFooter,
+    Sidebar,
+    Header,
+    Footer,
   },
 }
 </script>
